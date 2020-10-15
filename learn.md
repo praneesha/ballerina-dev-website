@@ -30,7 +30,7 @@ redirect_from:
 
    <ul class="cLearnLandingLinks">
    <li><a href="/installing-ballerina/" class="cGreenLinkArrow">Setting up Ballerina</a></li>
-    <li><a href="/learn/quick-tour" class="cGreenLinkArrow">Quick Tour</a></li>
+    <li><a href="/quick-tour" class="cGreenLinkArrow">Quick Tour</a></li>
    </ul>
 
 </div>
