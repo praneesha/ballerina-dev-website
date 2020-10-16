@@ -1,33 +1,21 @@
 # This is the config of the spell checker GitHub Action (i.e., https://github.com/marketplace/actions/check-spelling).
 
-name: Spellcheck Action
-on: push
+on: [pull_request]
+name: Check spelling
 jobs:
-  build:
-    name: Spellcheck
+  spellChecker:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: rojopolis/spellcheck-github-actions@0.5.0
-      name: Spellcheck
-  matrix:
-    - name: Markdown
-      aspell:
-        lang: en
-      dictionary:
-      wordlists:
-        - .wordlist.txt
-      encoding: utf-8
-  pipeline:
-    - pyspelling.filters.markdown:
-    - pyspelling.filters.html:
-      comments: false
-      ignores:
-      - code
-      - pre
-    sources:
-    - '**/*.md'
-    default_encoding: utf-8
+      - uses: actions/checkout@v2.0.0
+        with:
+          fetch-depth: 2
+      - name: Check spelling
+        uses: check-spelling/check-spelling@0.0.16-alpha
+        with:
+          bucket: .github/actions
+          project: spelling
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
 
