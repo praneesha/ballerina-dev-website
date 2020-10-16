@@ -1,0 +1,18 @@
+# This is the config of the spell checker GitHub Action (i.e., https://github.com/marketplace/actions/check-spelling).
+
+name: Spellcheck Action
+on: push
+
+jobs:
+  build:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: rojopolis/spellcheck-github-actions@0.5.0
+      name: Spellcheck
+
+
+
+
+
