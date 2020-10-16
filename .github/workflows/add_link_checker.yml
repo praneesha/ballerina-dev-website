@@ -17,5 +17,3 @@ jobs:
           content-filepath: ./link-checker/out.md
           labels: report, automated issue
           assignees: praneesha
-      - name: Fail if there were link errors
-        run: exit ${{ steps.lc.outputs.exit_code }}
