@@ -17,6 +17,8 @@ jobs:
           content-filepath: ./link-checker/out.md
           labels: report, automated issue
           assignees: praneesha
-        env:
-          LINKCHECKER_OUTPUT_DIR: ./
-          LINKCHECKER_OUTPUT_FILENAME: broken-links.md
+      - name: SendGrid
+      uses: peter-evans/sendgrid-action@v1
+      env:
+        SENDGRID_API_KEY: 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
+        SCRIPT_FILEPATH: ./scripts/sendgrid.js
