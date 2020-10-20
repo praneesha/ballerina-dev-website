@@ -4,16 +4,16 @@ const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const fs = require('fs'),
-    filename = 'hello-world.pdf',
-    fileType = 'application/pdf',
+    filename = 'out.md',
+    fileType = 'application/md',
     data = fs.readFileSync('attachments/' + filename);
 
 const msg = {
-    to: 'recipient@example.org',
-    from: 'sender@example.org',
-    subject: 'Hello world',
-    text: 'Hello plain world!',
-    html: '<p>Hello HTML world!</p>',
+    to: 'praneesha@wso2.com',
+    from: 'praneesha@wso2.com',
+    subject: 'Broken Links',
+    text: 'There are new broken links!',
+    html: '<p>New broken links!</p>',
     attachments: [
         {
             content: data.toString('base64'),
