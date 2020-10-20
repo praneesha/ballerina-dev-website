@@ -1,9 +1,7 @@
 # This is the config of the link checker GitHub Action (i.e., https://github.com/marketplace/actions/link-checker).
 
 name: Link Checker Example Command
-on:
-  repository_dispatch:
-    types: [link-checker-example-command]
+on: [push]
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
