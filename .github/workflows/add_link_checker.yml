@@ -1,7 +1,9 @@
 # This is the config of the link checker GitHub Action (i.e., https://github.com/marketplace/actions/link-checker).
 
-on: [push]
-name: Check markdown links
+name: Link Checker Example Command
+on:
+  repository_dispatch:
+    types: [link-checker-example-command]
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
@@ -9,6 +11,19 @@ jobs:
       - uses: actions/checkout@v2
       - name: Link Checker
         id: lc
-        uses: peter-evans/link-checker@v1
-      - name: Fail if there were link errors
-        run: exit ${{ steps.lc.outputs.exit_code }}
+        uses: ./
+      - name: Create Issue From File
+        uses: peter-evans/create-issue-from-file@v2
+        with:
+          title: Link Checker Report
+          content-filepath: ./link-checker/out.md
+          labels: report, automated issue
+          assignees: peter-evans
+      - name: Output exit code
+        run: echo ${{ steps.lc.outputs.exit_code }}
+      - name: Add reaction
+        uses: peter-evans/create-or-update-comment@v1
+        with:
+          repository: ${{ github.event.client_payload.github.payload.repository.full_name }}
+          comment-id: ${{ github.event.client_payload.github.payload.comment.id }}
+          reaction-type: hooray
