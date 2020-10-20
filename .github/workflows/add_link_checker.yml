@@ -17,6 +17,6 @@ jobs:
           content-filepath: ./link-checker/out.md
           labels: report, automated issue
           assignees: praneesha
-          env:
-            LINKCHECKER_OUTPUT_DIR: ./
-
+        env:
+          LINKCHECKER_OUTPUT_DIR: ./
+          LINKCHECKER_OUTPUT_FILENAME: broken-links.md
