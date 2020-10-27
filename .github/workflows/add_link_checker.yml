@@ -10,8 +10,13 @@ jobs:
       - name: Link Checker
         id: lc
         uses: peter-evans/link-checker@v1
-      - name: SendGrid
-        uses: peter-evans/sendgrid-action@v1
-        env:
-          SENDGRID_API_KEY: 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
-          SCRIPT_FILEPATH: ./scripts/sendgrid.js
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Link Checker Report
+          path:  ./link-checker/out.md
+      #- name: SendGrid
+        #uses: peter-evans/sendgrid-action@v1
+        #env:
+          #SENDGRID_API_KEY: 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
+          #SCRIPT_FILEPATH: ./scripts/sendgrid.js
