@@ -14,4 +14,4 @@ jobs:
         uses: peter-evans/sendgrid-action@v1
         env:
           SENDGRID_API_KEY: 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
-          SCRIPT_FILEPATH: ./.github/scripts/sendgrid.js
+          SCRIPT_FILEPATH: ./scripts/sendgrid.js
