@@ -10,13 +10,6 @@ jobs:
       - name: Link Checker
         id: lc
         uses: peter-evans/link-checker@v1
-      - name: Create Issue From File
-        uses: peter-evans/create-issue-from-file@v2
-        with:
-          title: Link Checker Report
-          content-filepath: ./link-checker/out.md
-          labels: report, automated issue
-          assignees: praneesha
       - name: SendGrid
         uses: peter-evans/sendgrid-action@v1
         env:
