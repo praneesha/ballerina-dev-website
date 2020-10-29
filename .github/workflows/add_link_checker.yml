@@ -11,7 +11,7 @@ jobs:
         id: lc
         uses: peter-evans/link-checker@v1
         with:
-          args: -r learn swan-lake 1.1 1.0 -x 0.990 -d ballerina-dev-website 
+          args: -r learn swan-lake 1.1 1.0 -x 0.990 -d ${{ github.workspace }} 
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
