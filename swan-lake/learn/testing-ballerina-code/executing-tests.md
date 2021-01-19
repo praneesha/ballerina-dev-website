@@ -117,3 +117,8 @@ $ ballerina test --code-coverage
 A sample view of the code coverage report is shown below.
 
 ![Sample Code Coverage](/swan-lake/learn/images/code-cov.gif)
+
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>

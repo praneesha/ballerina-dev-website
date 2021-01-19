@@ -137,3 +137,8 @@ For more information on the command, see [Structuring Ballerina Code](/learn/str
 
 Now, that you have an understanding of how a test case can be written and executed, you can dive deep into the available
  features in [Writing Tests](/learn/testing-ballerina-code/writing-tests).
+
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>

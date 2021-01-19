@@ -130,3 +130,8 @@ $ cat response.txt
 ## What's Next?
 
 For more information on how to connect external event sources such as Amazon DynamoDB and Amazon S3 to Lambda Functions, go to [AWS Lambda event source mapping documentation](https://docs.aws.amazon.com/lambda/latest/dg/invocation-eventsourcemapping.html).
+
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>

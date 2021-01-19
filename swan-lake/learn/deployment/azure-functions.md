@@ -116,3 +116,8 @@ Request: url=https://functions1777.azurewebsites.net/api/fromHttpToQueue method=
 ## What's Next?
 
 For a full sample with all the supported Azure Functions triggers and bindings in Ballerina, see [Azure Functions Deployment Example](/swan-lake/learn/by-example/azure-functions-deployment.html).
+
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>
