@@ -39,3 +39,8 @@ password = ""
 ## Organizations
 
 When you push a module to Ballerina Central, the runtime validates organizations for the user against the org-name defined in your module’s `Ballerina.toml` file. Therefore, when you have more than one organization in Ballerina Central, be sure to pick the organization name that you intend to push the module into and set that as the `org-name` in the `Ballerina.toml` file inside the project directory.
+
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>

@@ -242,3 +242,8 @@ These powerful supporting tools extend Ballerina to various ecosystem technologi
 </td>
 </tr>
 </table>
+
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>

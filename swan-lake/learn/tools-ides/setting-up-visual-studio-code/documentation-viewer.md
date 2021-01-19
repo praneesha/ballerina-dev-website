@@ -30,3 +30,7 @@ The Documentation Viewer represents the documented entities in a file in an orga
  - For information on the next capability of the VS Code Ballerina plugin, see [Run All tests](/swan-lake/learn/vscode-plugin/run-all-tests).
  - For information on the VS Code Ballerina extension, see [The Visual Studio Code Ballerina Extension](/swan-lake/learn/vscode-plugin).
 
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>

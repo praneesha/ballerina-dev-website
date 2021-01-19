@@ -72,3 +72,8 @@ This option allows you to view the definition of a selected variable, function, 
 
  - For information on the next capability of the VS Code Ballerina extension, see [Run and Debug](/swan-lake/learn/vscode-plugin/run-and-debug).
  - For information on the VS Code Ballerina extension, see [The Visual Studio Code Ballerina Extension](/swan-lake/learn/vscode-plugin).
+
+ <div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>

@@ -35,3 +35,8 @@ Follow the steps below to do this.
 
 - For information on the Ballerina VSCode extension, see [The Visual Studio Code Ballerina Extension](/learn/vscode-plugin/).
 - For information on all the tools and IDEs that are supported by Ballerina, see [Setting up Ballerina](/learn/installing-ballerina/).
+
+<div class="cGitButtonContainer"><p data-button="iGitStarText">"Star"</p><p data-button="iGitWatchText">"Watch"</p></div>
+
+
+<style> #tree-expand-all , #tree-collapse-all, .cTocElements {display:none;} .cGitButtonContainer {padding-left: 40px;} </style>
