@@ -1,21 +1,23 @@
-# This is the config of the link checker GitHub Action (i.e., https://github.com/marketplace/actions/link-checker).
+# This is the config of the link checker GitHub Action (i.e., https://github.com/marketplace/actions/lychee-link-checker-action).
 
-on: [pull request]
-name: Check markdown links
+on: [pull_request]
+name: Link Checker 
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Link Checker
+      - name: Build the site
+        uses: shafreenAnfar/jekyll-build-action@v5
+      - name: Lychee link checker action
         id: lc
-        uses: peter-evans/link-checker@v1
-      - name: Create Issue From File
-        uses: peter-evans/create-issue-from-file@v2
+        uses: lycheeverse/lychee-action@v1
         with:
-          title: Link Checker Report
-          content-filepath: ./link-checker/out.md
-          labels: report, automated issue
-          assignees: praneesha
+          args: --exclude-link-local
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: Link Checker Report
+          path:  ./lychee/out.md  
       - name: Fail if there were link errors
         run: exit ${{ steps.lc.outputs.exit_code }}
