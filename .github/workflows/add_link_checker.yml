@@ -13,11 +13,11 @@ jobs:
         id: lc
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --exclude twitter.com --exclude novacodecamp.org  --verbose *.md *.html
+          args: --exclude twitter.com --exclude novacodecamp.org  --verbose *.html
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
           name: Link Checker Report
-          path:  ./lychee/out.md  
+          path:  ./tmp/lychee/out.md  
       - name: Fail if there were link errors
         run: exit ${{ steps.lc.outputs.exit_code }}
