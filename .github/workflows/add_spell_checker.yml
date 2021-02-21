@@ -6,9 +6,6 @@ jobs:
   spellChecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Build the site
-        uses: shafreenAnfar/jekyll-build-action@v5
       - uses: actions/checkout@v2.0.0
         with:
           fetch-depth: 2
