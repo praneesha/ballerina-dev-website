@@ -2,7 +2,7 @@
 
 on:
   push:
-  pull_request:
+  pull_request_target:
 name: Spell Checker
 jobs:
   spellChecker:
@@ -10,9 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2.0.0
         with:
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 2
       - name: Check spelling
         uses: check-spelling/check-spelling@0.0.17-alpha
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEBUG: 1
