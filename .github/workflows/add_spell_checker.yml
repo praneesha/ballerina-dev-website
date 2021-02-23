@@ -1,6 +1,8 @@
 # This is the config of the spell checker GitHub Action (i.e., https://github.com/marketplace/actions/check-spelling).
 
-on: [push]
+on:
+  push:
+  pull_request_target:
 name: Spell Checker
 jobs:
   spellChecker:
